@@ -1,8 +1,10 @@
 #!/bin/sh
 
-if [ -d $1/.storybook ]; then
-  echo "Storybook"
-  exit 0
-else
-  exit 1
-fi
+# if [ -d $1/.storybook ]; then
+#   echo "Storybook"
+#   exit 0
+# else
+#   exit 1
+# fi
+
+echo "Storybook"
