@@ -9,10 +9,10 @@ cd $BUILD_DIR
 
 echo '       Writing `static.json` for heroku static buildpack'
 
-pwd
-
 echo '{ "root": "libs/ui-components/storybook-static/", "basic_auth": true, "https_only": true }' > static.json
 
-# export PATH="$BUILD_DIR/.heroku/node/bin:$BUILD_DIR/.heroku/yarn/bin":$PATH
+echo '       Delete Procfile'
 
-# npm run storybook:build
+rm Procfile
+
+export PATH="$BUILD_DIR/.heroku/node/bin:$BUILD_DIR/.heroku/yarn/bin":$PATH
